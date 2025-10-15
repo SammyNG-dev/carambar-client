@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
+const API_URL = import.meta.env.VITE_API_URL
+
 function App() {
   const [joke, setjoke] = useState(null);
 
@@ -9,12 +11,10 @@ function App() {
       <button
         type="button"
         onClick={() => {
-          fetch("https://icanhazdadjoke.com/", {
-            headers: { Accept: "application/json" },
-          })
+          fetch(`${API_URL}/random-joke`)
             .then((res) => res.json())
-            .then((jokes) => {
-              setjoke(jokes.joke);
+            .then((joke) => {
+              setjoke(joke.text);
             });
         }}
       >
@@ -23,7 +23,7 @@ function App() {
       <p>
         {joke
           ? joke
-          : "Cliquez sur le bouton pour obtenir une blague aléatoire"}
+          : "Cliquez sur le bouton pour obtenir une blague au hasard"}
       </p>
     </>
   );
