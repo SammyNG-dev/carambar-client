@@ -11,7 +11,7 @@ function App() {
       <button
         type="button"
         onClick={() => {
-          fetch(`${API_URL}/random-joke`)
+          fetch(`${API_URL}/api/random-joke`)
             .then((res) => res.json())
             .then((joke) => {
               setjoke(joke.text);
