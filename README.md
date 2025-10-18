@@ -1,16 +1,39 @@
-# React + Vite
+## Projet Carambar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Caci est la partie front-end du mini-projet de blagues carambar qui est un projet de sélection pour la formation de Concepteur développeur d'Application DevOps de la Wild Code School qui commencera le 16 mars 2026.
 
-Currently, two official plugins are available:
+# Les technos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Vite + Node + React
 
-## React Compiler
+# Le site 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Le site est accessible à l'adresse suivante : https://sammyng-dev.github.io/carambar-client
 
-## Expanding the ESLint configuration
+C'est un site avec une UI ultra-minimaliste ou cliquer sur le bouton "Blague au hasard" envoie une requête au serveur pour obtenir une blague de manière aléatoire.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Le code
+
+- Si vous voulez voir le code, clonez le projet :
+```
+git clone git@github.com:SammyNG-dev/carambar-client.git
+```
+- Installez les dépendances :
+```
+npm install
+```
+- Lancez le projet React :
+```
+npm run dev
+```
+- Si vous l'avez pas Biome sur votre machine :
+```
+npm i -g @biomejs/biome
+```
+Quand il est lancé, le projet local est accessible à cette adresse : https://localhost:5173/carambar-client/.
+
+# Liens utiles
+
+Le dépôt Github du serveur est à cette adresse : https://github.com/sammyng-dev/carambar-server
+
+La documentation Swagger de l'API : https://carambar-server.onrender.com/api-docs
